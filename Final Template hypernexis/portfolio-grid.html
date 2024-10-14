@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" href="./assets/hypernexis logo.webp" sizes="32x32">
+  <link rel="icon" type="image/png" href="./assets/hypernexis logo.webp" sizes="16x16">
+  <link rel="shortcut icon" href="./assets/hypernexis logo.webp">
+
+  
+    <!-- fav icon -->
+    <!-- <link rel="icon" href="assets/images/fav-icon/fav-icon.png"> -->
+
+    <!-- bootstarp -->
+    <link rel="stylesheet" href="css/vendors/bootstrap.min.css">
+
+    <!-- animate.css file -->
+    <link rel="stylesheet" href="css/vendors/animate.css">
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="css/vendors/jquery.fancybox.min.css">
+
+    <!-- flaticon -->
+    <link rel="stylesheet" href="css/vendors/flaticon/flaticon.css">
+
+    <!-- fontAwesome -->
+    <link rel="stylesheet" href="css/vendors/all.min.css">
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="css/vendors/bootstrap-icons-1.9.1/bootstrap-icons.css">
+
+    <!-- Swiper -->
+    <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css">
+
+    <!-- Font Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&amp;display=swap">
+
+    <!-- main-LTR -->
+    <link rel="stylesheet" href="css/main-LTR.css">
+    <title> HyperNexis | Portfolio</title>
+</head>
+
+<body class=" dark-theme ">
+    <!--Start Page Header-->
+    <header class="page-header content-always-light header-basic" id="page-header">
+        <div class="header-search-box">
+          <div class="close-search"></div>
+          <form class="nav-search search-form" role="search" method="get"
+            action="./index.html">
+            <div class="search-wrapper">
+              <label class="search-lbl">Search for:</label>
+              <input class="search-input" type="search" placeholder="Search..." name="searchInput" autofocus="autofocus">
+              <button class="search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+        </div>
+        <div class="container">
+          <nav class="menu-navbar">
+            <div class="header-logo">
+              <a class="logo-link" href="index.html">
+                <img height="150px" width="100px" class="logo-img light-logo" loading="lazy" src="./assets/hypernexis logo.webp" alt="logo">
+                <img class="logo-img dark-logo" loading="lazy" src="./assets/hypernexis logo.webp" alt="logo">
+              </a>
+            </div>
+            <div class="links menu-wrapper">
+              <ul class="list-js links-list">
+                <li class="menu-item has-sub-menu">
+                  <a class="menu-link " href="index.html">home</a>
+                </li>
+                <li  class="menu-item has-sub-menu">
+                  <a class="menu-link" href="./index.html#services">services </a>
+                 
+                </li>
+                <li class="menu-item has-sub-menu">
+                  <a class="menu-link active" href="portfolio-grid.html">portfolio </a>
+                </li>
+             
+                <li class="menu-item"><a class="menu-link" href="./contact-us_files/contact-uss.html">contact
+                    us</a></li>
+              </ul>
+            </div>
+            <div class="controls-box">
+              <!-- Menu Toggler button -->
+              <div class="control menu-toggler"><span></span><span></span><span></span></div>
+              <!-- Search Icon button -->
+              <div class="control header-search-btn"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></div>
+              <!-- Dark/Light mode button -->
+              <div class="mode-switcher dark-theme">
+                <div class="switch-inner go-light" title="Switch To Light Mode"><i style="color: black;" class="bi bi-brightness-high "></i></div>
+                <div class="switch-inner go-dark" title="Switch To Dark Mode"><svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                </svg></div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    
+    <!--End Page Header-->
+    <!-- Start inner Page hero-->
+    <section class="d-flex align-items-center page-hero  inner-page-hero " id="page-hero">
+        <div class="overlay-photo-image-bg parallax" data-bg-img="assets/images/hero/inner-page-hero.jpg" data-bg-opacity="1"></div>
+        <div class="overlay-color" data-bg-opacity=".75"></div>
+        <div class="container">
+            <div class="hero-text-area centerd">
+                <h1 class="hero-title  wow fadeInUp" data-wow-delay=".2s">Portfolio</h1>
+                <nav aria-label="breadcrumb ">
+                    <ul class="breadcrumb wow fadeInUp" data-wow-delay=".6s">
+                        <li class="breadcrumb-item"><a class="breadcrumb-link" href="./index.html"><i class="bi bi-house icon "></i>home</a></li>
+                        <li class="breadcrumb-item active">portfolio</li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!-- End inner Page hero-->
+    <!-- Start  portfolio Section-->
+    <section class="portfolio mega-section   " id="portfolio">
+        <div class="container">
+            <div class="sec-heading  ">
+                <div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">portfolio</span>
+                    <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Awesome <span class='hollow-text'>portfolio</span></h2>
+                </div>
+                <div class=" cta-area   wow fadeInUp" data-wow-delay=".8s"></div>
+            </div>
+            <div class="portfolio-wrapper  ">
+                <!--a menu of links to show the photos users needs   -->
+                <!-- <ul class="portfolio-btn-list wow fadeInUp" data-wow-delay=".2s">
+                    <li class="portfolio-btn active " data-filter="*">All</li>
+                    <li class="portfolio-btn        " data-filter=".mobile">mobile apps</li>
+                    <li class="portfolio-btn        " data-filter=".web">cloud</li>
+                    <li class="portfolio-btn        " data-filter=".data">data analaysis</li>
+                    <li class="portfolio-btn        " data-filter=".hosting">hosting</li>
+                </ul> -->
+                <div class="portfolio-group wow fadeIn" data-wow-delay=".4s">
+                    <div class="row ">
+                        <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile ">
+                            <div id="port-img1" class="item   "><a class="portfolio-img-link" href="portfolio-saloon.html"><img class="portfolio-img   img-fluid " loading="lazy"  src="assets/images/portfolio/1.webp" alt="portfolio item photo"/></a>
+                                <div class="item-info ">
+                                    <h3 class="item-title">Hollywood Hair Saloon</h3><i class="bi bi-arrow-right icon "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="col-12  col-md-6  col-lg-4  portfolio-item web  ">
+                            <div id="port-img2"  class="item   "><a class="portfolio-img-link" href="portfolio-soundview.html"><img class="portfolio-img   img-fluid " loading="lazy" src="assets/images/portfolio/2.webp" alt="portfolio item photo"/></a>
+                                <div class="item-info ">
+                                    <h3 class="item-title">SoundView</h3><i class="bi bi-arrow-right icon "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12  col-md-6  col-lg-4  portfolio-item data ">
+                            <div class="item   "><a class="portfolio-img-link" href="portfolio-foodies.html"><img class="portfolio-img   img-fluid " loading="lazy" src="assets/images/portfolio/3.webp" alt="portfolio item photo"/></a>
+                                <div class="item-info ">
+                                    <h3 class="item-title">Foodies</h3><i class="bi bi-arrow-right icon "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile ">
+                            <div class="item   "><a class="portfolio-img-link" href="portfolio-redux.html"><img class="portfolio-img   img-fluid " loading="lazy" src="assets/images/portfolio/4.webp" alt="portfolio item photo"/></a>
+                                <div class="item-info ">
+                                    <h3 class="item-title">Ridex</h3><i class="bi bi-arrow-right icon "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12  col-md-6  col-lg-4  portfolio-item hosting ">
+                            <div class="item   "><a class="portfolio-img-link" href="portfolio - SKHorology.html"><img class="portfolio-img   img-fluid " loading="lazy" src="assets/images/portfolio/5.webp" alt="portfolio item photo"/></a>
+                                <div class="item-info ">
+                                    <h3 class="item-title">SK Horology</h3><i class="bi bi-arrow-right icon "></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12  col-md-6  col-lg-4  portfolio-item mobile">
+                            <div class="item   "><a class="portfolio-img-link" href="portfolio-zeromakeup.html"><img class="portfolio-img   img-fluid " loading="lazy" src="assets/images/portfolio/6.webp" alt="portfolio item photo"/></a>
+                                <div class="item-info ">
+                                    <h3 class="item-title">Zero Makeup</h3><i class="bi bi-arrow-right icon "></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End  portfolio Section-->
+    <!-- Start  testimonials Section-->
+    <!-- <section class="testimonials testimonials-1-col   has-dark-bg  mega-section " id="testimonials-img-bg">
+        <div class="overlay-photo-image-bg parallax " data-bg-img="assets/images/sections-bg-images/1.jpg" data-bg-opacity=".25"> </div>
+        <div class="container">
+            <div class="sec-heading  centered ">
+                <div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">testimonials</span>
+                    <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">customers <span class='hollow-text'>testmonials</span></h2>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-10  mx-auto">
+                    <div class="swiper-container  wow fadeInUp  " data-wow-delay="0.2s">
+                        <div class="swiper-wrapper"> -->
+                            <!--First Slide-->
+                            <!-- <div class="swiper-slide">
+                                <div class="testmonial-card d-flex align-items-center justify-content-center">
+                                    <div class="testimonial-content">
+                                        <div class="customer-img "><img class="img-fluid " loading="lazy" src="assets/images/testimonials/1.png" alt="First Slide "></div>
+                                        <div class="customer-testimonial">
+                                            <div class="content">
+                                                <p class="testimonial-text "> ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+                                            </div>
+                                        </div>
+                                        <div class="customer-info ">
+                                            <div class="customer-details">
+                                                <p class="customer-name">Yusuf amin</p>
+                                                <p class="customer-role">founder</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--Second Slide-->
+                            <!-- <div class="swiper-slide">
+                                <div class="testmonial-card d-flex align-items-center justify-content-center">
+                                    <div class="testimonial-content">
+                                        <div class="customer-img "><img class="img-fluid " loading="lazy" src="assets/images/testimonials/2.png" alt="First Slide "></div>
+                                        <div class="customer-testimonial">
+                                            <div class="content">
+                                                <p class="testimonial-text "> ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel.</p>
+                                            </div>
+                                        </div>
+                                        <div class="customer-info ">
+                                            <div class="customer-details">
+                                                <p class="customer-name">fouad osman</p>
+                                                <p class="customer-role">officer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+                            <!--third Slide-->
+                            <!-- <div class="swiper-slide">
+                                <div class="testmonial-card d-flex align-items-center justify-content-center">
+                                    <div class="testimonial-content">
+                                        <div class="customer-img "><img class="img-fluid " loading="lazy" src="assets/images/testimonials/3.png" alt="First Slide "></div>
+                                        <div class="customer-testimonial">
+                                            <div class="content">
+                                                <p class="testimonial-text "> ipsum dolor sit amet consectetur adipisicing elit. Quod, id sequi aut qui est ab, corporis quis maiores reiciendis explicabo odio tenetur nulla sint vel. </p>
+                                            </div>
+                                        </div>
+                                        <div class="customer-info ">
+                                            <div class="customer-details">
+                                                <p class="customer-name">fairouz mhmd</p>
+                                                <p class="customer-role">manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!--navigation buttons-->
+                        <!-- <div class="swiper-button-prev">
+                            <div class="left-arrow"><i class="bi bi-chevron-left icon "></i>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <div class="right-arrow"><i class="bi bi-chevron-right icon "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End  testimonials Section-->
+    <!-- Start  our-clients Section-->
+    <!-- <section class="our-clients  bg-main elf-section" id="our-clients">
+        <div class="container-fluid">
+            <div class="sec-heading d-none ">
+                <h4 class="title ">our great clients</h4>
+            </div>
+            <div class=" clients-logos "> -->
+                <!--Swiper-->
+                <!-- <div class="swiper-container">
+                    <div class="swiper-wrapper clients-logo-wrapper wow fadeIn " data-wow-delay=".02s"> -->
+                        <!-- every client logo is located inside div  with clss name "swiper-slide ".
+              if you want to add more logos please keep the strcture of the swiper-slide as showen below
+              
+              
+              -->
+                        <!-- <div class="swiper-slide">
+                            <div class="client-logo  "><a href="#0"><img class="img-fluid logo " loading="lazy" src="assets/images/clients-logos/1-white.png" alt=" "></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="assets/images/clients-logos/2-white.png" alt=" "></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="assets/images/clients-logos/3-white.png" alt=" "></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="assets/images/clients-logos/4-white.png" alt=" "></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="assets/images/clients-logos/5-white.png" alt=" "></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="assets/images/clients-logos/6-white.png" alt=" "></a></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="client-logo "><a href="#0"><img class="img-fluid logo " loading="lazy" src="assets/images/clients-logos/7-white.png" alt=" "></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End  our-clients Section-->
+    <!-- Start  take-action Section-->
+    <section class="take-action elf-section has-dark-bg" id="take-action">
+        <div class="overlay-photo-image-bg  " data-bg-img="assets/images/sections-bg-images/2.jpg" data-bg-opacity=".25"> </div>
+        <div class="cta-wrapper">
+            <div class="container">
+                <div class="sec-heading  centered mb-0 ">
+                    <div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">contact us</span>
+                        <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">get in totch with us</h2>
+                        <p class="subtitle   wow fadeInUp " data-wow-delay=".6s">Whether you have a question, need assistance, or want to discuss a project, feel free to reach out.<br>We’d love to hear from you! </p>
+                    </div>
+                </div>
+                <!--Start .see-more-area-->
+                <div class=" see-more-area wow fadeInUp" data-wow-delay="0.8s"><a class=" btn-solid cta-link" href="./contact-us_files/contact-uss.html">contact us</a></div>
+                <!--End Of .see-more-area        -->
+            </div>
+        </div>
+    </section>
+    <!-- End  take-action Section-->
+    <!-- Start  page-footer Section-->
+    <footer class="page-footer dark-color-footer" id="page-footer">
+        <div class="overlay-photo-image-bg" data-bg-img="assets/footer-bg-1.jpg"
+          data-bg-opacity=".25"
+          style="background-image: url(&quot;assets/images/sections-bg-images/footer-bg-1.jpg&quot;); opacity: 0.25;"></div>
+        <div class="container">
+          <div class="row footer-cols">
+            <div  class="col-12 col-md-8 col-lg-4  footer-col "><img  class="img-fluid footer-logo" loading="lazy"
+                src="./assets/hypernexis logo.webp" alt="logo">
+              <div class="footer-col-content-wrapper">
+                <p class="footer-text-about-us ">
+                  Hypernexis where innovation meets 
+                  exceptional experiences. Join us and 
+                  elevate your online journey!
+    
+                </p>
+              </div>
+              <div class="form-area ">
+                <div class="mailchimp-form ">
+                  <form class="one-field-form" method="post" action="">
+                    <div class="field-group ">
+                      <label class="email-label" for="email-input"> Subscribe for More</label>
+                      <input class="email-input " type="email" value="" name="EMAIL" id="email-input"
+                        placeholder="Email Address" autocomplete="off">
+                      <div class="cta-area">
+                        <input class="btn-solid subscribe-btn" type="submit" value="Subscribe" name="subscribe">
+                      </div>
+                    </div><span class="email-notice">*we will not share your personal info</span>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div style="margin-top: 50px; " class="col-6 col-lg-2  footer-col ">
+              <h2 class=" footer-col-title    ">Find Us</h2>
+              <div class="footer-col-content-wrapper">
+                <ul class="footer-menu ">
+                  <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link"
+                      href="https://pk.linkedin.com/company/hypernexis">linkedIn</a>
+                  </li>
+                  <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link"
+                      href="https://www.facebook.com/people/HyperNexis/61560250395065/?_rdr">Facebook</a>
+                  </li>
+                  <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link"
+                      href="">Instagram</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div style="margin-top: 50px;" class="col-6 col-lg-2 footer-col ">
+              <h2 class=" footer-col-title    ">Menus</h2>
+              <div class="footer-col-content-wrapper">
+                <ul class="footer-menu">
+                  <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link"
+                      href="index.html">HOME</a>
+                  </li>
+                  <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link"
+                      href="./portfolio-grid.html">PORTFOLIO</a>
+                  </li>
+                  <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link"
+                      href="./index.html#services">SERVICES</a>
+                  </li>
+                  <li class="footer-menu-item"><i class="bi bi-arrow-right icon "></i><a class="footer-menu-link"
+                      href="./contact-us_files/contact-uss.html">CONTACT US</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div style="margin-top: 50px;" class="col-12     col-lg-4 footer-col ">
+              <h2 class=" footer-col-title    ">contact information</h2>
+              <div class="footer-col-content-wrapper">
+                <div class="contact-info-card"><i class="bi bi-envelope icon"></i><a class="text-lowercase  info"
+                    href="mailto:hypernexisit@gmail.com">hypernexisit@gmail.com</a></div>
+                <div class="contact-info-card"><i class="bi bi-geo-alt icon"></i><span class="text-Uppercase  info">
+                    Regent Mall Chen One Rd, Faisalabad, Punjab 38000</span></div>
+                <div class="contact-info-card"><i class="bi bi-phone icon"></i><a class="info"
+                    href="tel:+923108144911">+923108144911 </a></div>
+                <div class="contact-info-card">
+                  <div class="social-icons">
+                    <div class="sc-wrapper dir-row sc-size-32">
+                      <ul class="sc-list">
+                        <li class="sc-item " title="Facebook"><a class="sc-link"
+                            href="https://www.facebook.com/people/HyperNexis/61560250395065/?_rdr" title="social media icon"><i
+                              class="fab fa-facebook-f sc-icon"></i></a></li>
+                        <li class="sc-item " title="instagram"><a class="sc-link"
+                            href="https://www.instagram.com/hypernexis/?igsh=NTlseWhhbHY5OXJ2&utm_source=qr" title="social media icon"><i
+                              class="fab fa-instagram sc-icon"></i></a></li>
+                        <li class="sc-item " title="linkedIn"><a class="sc-link"
+                            href="https://pk.linkedin.com/company/hypernexis" title="social media icon"><i
+                              class="fab fa-linkedin sc-icon"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyrights ">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 d-flex justify-content-start">
+                <p class="creadits">
+    
+    
+                  © 2024 
+                  HyperNexis.
+    
+                  <a class="link" href="#">All Rights Reserved.</a>
+                </p>
+              </div>
+              <!-- <div class="col-12 col-md-6 d-flex justify-content-end">
+                <div class="terms-links"><a href="https://amincode.com/html/flex-it/home-3.html#0">Terms of Use </a>
+                  | <a href="https://amincode.com/html/flex-it/home-3.html#0" data-bs-toggle="modal"
+                    data-bs-target="#privacyPolicyModal">Privacy Policy.</a>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!-- End  page-footer Section-->
+    <!-- Start loading-screen Component-->
+    <div class="loading-screen" id="loading-screen"><span class="bar top-bar"></span><span class="bar down-bar"></span><span class="progress-line"></span><span class="loading-counter"> </span></div>
+    <!-- End loading-screen Component-->
+    <!-- Start back-to-top Button-->
+    <div class="back-to-top" id="back-to-top"><i class="bi bi-arrow-up icon "></i>
+    </div>
+    <!-- End back-to-top Button-->
+    <!-- Start privacy-policy-modal-->
+    <div class="modal privacy-policy-modal fade" id="privacyPolicyModal" aria-labelledby="PrivacyPolicyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl ">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="PrivacyPolicyModalLabel">Privacy Policy Modal Title</h2>
+                    <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <h4>privacy policy item Title goes here </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis,
+                            labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+                    </div>
+                    <div class="content">
+                        <h4>privacy policy item Title goes here </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis,
+                            labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+                    </div>
+                    <div class="content">
+                        <h4>privacy policy item Title goes here </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis,
+                            labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+                    </div>
+                    <div class="content">
+                        <h4>privacy policy item Title goes here </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis,
+                            labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+                    </div>
+                    <div class="content">
+                        <h4>privacy policy item Title goes here </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis,
+                            labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+                    </div>
+                    <div class="content">
+                        <h4>privacy policy item Title goes here </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores saepe, labore sequi libero nesciunt optio quidem iste, dolorum nostrum ex at. Recusandae ducimus aut autem temporibus tempore rerum, consequuntur doloribus perspiciatis,
+                            labore totam dolorem veritatis repellendus omnis illo sint ut?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-solid" type="button" data-bs-dismiss="modal" aria-label="Close">Click to close</button>
+                    <button class="btn-outline" type="button">Do somthing else</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End privacy-policy-modal-->
+
+    <!--     JQuery     -->
+    <script src="js/vendors/jquery-3.6.1.min.js"></script>
+
+    <!--     bootstrap     -->
+    <script src="js/vendors/bootstrap.bundle.min.js"></script>
+
+    <!--     fancybox     -->
+    <script src="js/vendors/jquery.fancybox.min.js"></script>
+
+    <!--     wow     -->
+    <script src="js/vendors/wow.min.js"></script>
+
+    <!--     isotope     -->
+    <script src="js/vendors/isotope-min.js"></script>
+
+    <!--     swiper     -->
+    <script src="js/vendors/swiper-bundle.min.js"></script>
+
+    <!--     main     -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
